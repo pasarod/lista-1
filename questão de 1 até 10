@@ -1,1 +1,146 @@
+questão 1
+-------------------------------------------------------------------------------------------------------------
+def somador(x, y):
+    soma = x + y
+    print (soma)
+def subtrair (x, y):
+    sub = x - y
+    print(sub)
+def divisor(x, y):
+    div = x // y
+    print(div)
+def multiplicador(x, y):
+    multi = x * y
+    print(multi)
 
+print("1- soma""\n""2- subtração""\n""3- divisão""\n""4- multiplicação""\n")
+
+pupum = int(input("escolha o tipo de operação:"))
+
+if pupum == 1:
+    x = int(input("digite um número para somar:"))
+    y = int(input("digite um número para somar:"))
+    somador(x, y)
+elif pupum == 2:
+    x = int(input("digite um número para subtrair:"))
+    y = int(input("digite um número para subtrair:"))
+    subtrair(x, y)
+elif pupum == 3:
+    x = int(input("digite um número para dividir:"))
+    y = int(input("digite um número para dividir:"))
+    divisor(x, y)
+elif pupum == 4:
+    x = int(input("digite um número para multiplicar:"))
+    y = int(input("digite um número para multiplicar:"))
+    multiplicador(x, y)
+-----------------------------------------------------------------------------------------------------------------------
+
+questão 2 
+-----------------------------------------------------------------------------------------------------------------------
+name = str(input("digite seu nome:"))
+ide = int(input("digite sua idade:"))
+
+print(f"{name} tem {ide} anos")
+-----------------------------------------------------------------------------------------------------------------------
+
+questão 3
+----------------------------------------------------------------------------------------------------------------------
+numi = int(input("digite uum número:"))
+if numi == 0:
+    print(f"{numi} é igual a zero")
+elif numi < 0:
+    print(f"{numi} é negativo")
+elif numi > 0:
+    print(f"{numi} é positivo")
+----------------------------------------------------------------------------------------------------------------------
+
+questão 4
+----------------------------------------------------------------------------------------------------------------------
+nampo = float(input("digite a nota do aluno:"))
+if nampo >= 7:
+    print(f"parabens você passou com {nampo} na média")
+elif nampo < 7: 
+    print("infelizmente nos veremos na prova final!!!")
+--------------------------------------------------------------------------------------------------------------------
+
+questão 5 
+-------------------------------------------------------------------------------------------------------------------
+bruno = int(input("digite um número:"))
+
+for i in range(1, 11):
+    tabunada =  bruno * i
+    print(f"{bruno} x {i} = {tabunada}")
+-----------------------------------------------------------------------------------------------------------------
+
+questão 6
+----------------------------------------------------------------------------------------------------------------
+lari = int(input("digite um número:"))
+red = 0 
+for i in range(1, lari + 1):
+    red += i
+print(red)
+----------------------------------------------------------------------------------------------------------------
+
+questão 7
+----------------------------------------------------------------------------------------------------------------
+fita = 0 
+tesoura = []
+while fita < 10:
+    sapatilha = int(input("digite um número:"))
+    tesoura.append(sapatilha)
+    fita += 1
+pimpim = sum(tesoura)
+carlos = pimpim // 2
+print(f"a soma de todos os números é {pimpim} e a média é {carlos}")
+---------------------------------------------------------------------------------------------------------------
+
+questão 8
+-------------------------------------------------------------------------------------------------------------
+soma_total = 0
+
+numero = int(input("Digite um número (ou 0 para parar): "))
+
+while numero != 0:
+    soma_total += numero
+    
+    numero = int(input("Digite outro número (ou 0 para parar): "))
+
+print(f"A soma de todos os valores digitados é: {soma_total}")
+-----------------------------------------------------------------------------------------------------------
+
+questão 9 
+----------------------------------------------------------------------------------------------------------
+def encontrar_maior(a, b):
+    if a > b:
+        return a  
+    else:
+        return b  
+
+numero1 = 15
+numero2 = 42
+
+maior = encontrar_maior(numero1, numero2)
+print(f"O maior número é: {maior}")
+---------------------------------------------------------------------------------------------------------
+
+questão 10
+-------------------------------------------------------------------------------------------------------
+
+numeros = []
+
+
+for i in range(5):
+    
+    valor = int(input(f"Digite o {i + 1}º número: "))
+    
+    
+    numeros.append(valor)
+
+
+maior_valor = max(numeros)
+menor_valor = min(numeros)
+
+print(f"\nOs números digitados foram: {numeros}")
+print(f"O MAIOR valor é: {maior_valor}")
+print(f"O MENOR valor é: {menor_valor}")
+------------------------------------------------------------------------------------------------------
